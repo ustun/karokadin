@@ -306,3 +306,8 @@ and (max-device-width : 667px) { /* STYLES GO HERE */
 display: none!important;
 }
 .cs_bullets{display:none;}
+
+
+#credits a, #credits a:hover, #credits {
+ color:rgb(125, 13, 13);
+}
