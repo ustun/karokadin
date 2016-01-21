@@ -1,0 +1,308 @@
+
+div.section > div {
+  max-width: 1000px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2em;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+background-image: url('images/bg2.png');
+}
+
+.section {
+  /* min-height: 600px; */
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+
+#contact-email {
+  display: block;
+  font-size: 25px;
+  color: white;
+}
+
+ul.offer {
+  list-style-type: none;
+  padding: 0;
+  font-style: italic;
+}
+
+
+#gelecek-performanslar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#gelecek-performanslar {
+  padding-top: 30px;
+
+  color: #104061;
+}
+#hakkinda, #iletisim, #gelecek-performanslar, #iletisim a ,
+#hakkinda a, #iletisim a, #gelecek-performanslar, #iletisim a
+{
+  /* background: tomato; */
+
+  padding-top: 30px;
+color: rgb(125, 23, 23);
+}
+
+#clients {
+  background: rgb(33, 33, 44);
+  color: white;
+}
+
+#clients a {
+  color: white;
+}
+
+#contact {
+  background: rgb(44, 44, 56);
+  color: white;
+}
+
+#contact a {
+  color: white;
+}
+
+hr {
+    border: 1px dashed rgb(125, 23, 23);
+    margin-right: 55px;
+    margin-left: 55px;
+
+}
+
+ul.menu {
+  margin:0;
+  list-style-type: none;
+  right: 20px;
+
+  /* background: white; */
+  padding: 8px;
+  margin-bottom:15px;
+}
+
+ul.menu li {
+  display: inline-block;
+  /* background: rgb(33, 33, 44); */
+  color: rgb(125, 23, 23);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(125, 23, 23);
+transform: rotate(0deg);
+}
+
+ul.menu li:hover {
+  color: #104061;
+border-color: #104061;
+  cursor: pointer;
+  transition: 0.5s transform;
+}
+
+ul.menu li.bilet-al {
+  width: 146px;
+background:rgb(125, 23, 23); color: #d5bdab;
+}
+ul.menu li.bilet-al:hover {
+  transform: rotate(-21deg);
+}
+
+ul.menu a {
+  text-decoration: none;
+  color: white;
+
+}
+
+#yazane {
+  color: rgb(33, 33, 44);
+}
+
+#join {
+  background: crimson;
+  color: white;
+}
+
+#trainings {
+  background: black;
+  color: white;
+}
+
+#trainings-overview {
+  color: white;
+  background: crimson;
+
+}
+#react-trainings {
+  background: black;
+  color: white;
+}
+#react-trainings h2, #react-trainings h3 {
+
+  color: rgb(0, 215, 255);
+
+
+}
+
+#trainings a, #trainings a:visited {
+  color: white;
+}
+
+#react-trainings h2 {
+  margin-top: 49px;
+}
+
+#react-trainings a, #react-trainings a:visited {
+  color: white;
+}
+
+#javascript-trainings {
+  background: black;
+  color: black;
+  background: rgb(241,221,63);
+}
+
+#javascript-trainings h2 ,  #javascript-trainings h3 {
+
+}
+
+#javascript-trainings a, #javascript-trainings a:visited {
+  color: black;
+}
+
+#about-trainer {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.7em;
+}
+#about-trainer ul {
+  width: 600px;
+}
+#react-training-detail .overview {
+
+  vertical-align: top;
+  display: flex;
+  display: -webkit-flex;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+
+}
+#react-training-detail .overview div{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  display: -webkit-flex;
+
+  align-items: center;
+  -webkit-align-items: center;
+
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+
+  background: lightyellow;
+}
+#react-training-detail .info p{
+  font-size: 14px;
+  text-align: left;
+  display: none;
+
+}
+
+#react-training-detail {
+  background: white;
+  color: black;
+}
+.no-list-style {
+  list-style: none;
+}
+
+.text-align-left {
+  text-align: left;
+
+}
+
+#join a {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  /* text-transform: uppercase; */
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'alegreya';
+font-family: 'Open Sans';
+color: rgb(125, 23, 23)
+}
+
+h2 {
+  /* font-style: italic; */
+}
+
+#athens2 {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  -ms-filter: grayscale(50%);
+  -o-filter: grayscale(50%);
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(50%);
+
+}
+
+
+
+@media only screen
+and (max-device-width : 800px) { /* STYLES GO HERE */
+
+  .logo {
+    width: 100%;
+    display: none;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) { /* STYLES GO HERE */
+
+
+}
+
+
+.lazyOwl {
+  height: 500px;
+  border-radius: 5px;
+}
+
+
+.csslider1 > .pause:checked ~ .cs_play_pause > .cs_play {
+
+display: none!important;
+}
+.cs_bullets{display:none;}
