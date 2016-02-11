@@ -46,7 +46,20 @@
     <script src="carousel/owl.carousel.min.js"></script>
 
     <script src="js/karokadin.js"></script>
-
+<script>
+/**
+* Google Analytics'te giden bağlantılara yapılan tıklamaları izleyen işlev.
+* Bu işlev, geçerli bir URL dizesini bağımsız değişken olarak alır ve o URL dizesini
+* etkinlik etiketi olarak kullanır. Aktarım yönteminin, bunu destekleyen 'navigator.sendBeacon' kullanılarak tarayıcıda
+* 'beacon' olarak ayarlanması isabetin gönderilmesini sağlar.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
   </head>
   <body>
 
@@ -235,9 +248,9 @@
 <div class="section" id="gelecek-performanslar">
       <div>
         <h2>gelecek performanslar</h2>
-        <p>biletler <a href='http://www.biletix.com/etkinlik/TT217/TURKIYE/tr'  target='_blank'>biletix'te.</a></p>
+        <p>biletler <a href='http://www.biletix.com/etkinlik/TT217/TURKIYE/tr' onclick="trackOutboundLink('http://www.biletix.com/etkinlik/TT217/TURKIYE/tr')" target='_blank'>biletix'te.</a></p>
         <ul>
-          <li>23 Şubat 2016 &ndash; saat: 20:00&ndash;  tiyatro d22 &ndash;<a href='http://www.biletix.com/etkinlik/TT217/TURKIYE/tr'  target='_blank' style='border: 0px solid rgb(125, 23, 23); padding: 5px;'>bilet al</a></li>
+          <li>23 Şubat 2016 &ndash; saat: 20:00&ndash;  tiyatro d22 &ndash;<a href='http://www.biletix.com/etkinlik/TT217/TURKIYE/tr'   onclick="trackOutboundLink('http://www.biletix.com/etkinlik/TT217/TURKIYE/tr')" target='_blank' style='border: 0px solid rgb(125, 23, 23); padding: 5px;'>bilet al</a></li>
           <li>4 Mart 2016 &ndash; saat: 20:00 &ndash; kkm gönül ülkü ve gazanfer özcan sahnesi</li>
           <li>8 Mart 2016 &ndash; saat: 20:00 &ndash; koç üniversitesi sevgi gönül oditoryumu (biletler tükendi)</li>
         </ul>
@@ -272,6 +285,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
 <!-- tes2-->
 <div id='credits'>
 <div id='credit-icons' style='font-size: 8px';>Icons made by <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
