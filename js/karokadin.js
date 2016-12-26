@@ -54,16 +54,18 @@ $(function () {
     });
 });
 
+var tMax = 15000;
 window.setTimeout(function () {
 
     $('#modal').remove();
 
-}, 15000);
+}, tMax);
 
 
-// var t = 0;
-// window.setInterval(function () {
+var t = 0;
 
-//     $('#modal').remove();
+window.setInterval(function () {
 
-// }, 1000);
+    $('#remaining').text(Math.floor((tMax - t) / 1000));
+    t += 1000;
+}, 1000);

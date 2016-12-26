@@ -325,36 +325,46 @@ display: none!important;
 .modal-inner {
     position: fixed;
     z-index: 2;
-    top: 10%;
+    top: 7%;
     left: 20px;
     right: 20px;
-    bottom: 10%;
+    bottom: 5%;
+    /* border: 10px dashed red; */
 }
 
 #modal-buttons {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    text-align: center;
+
+    /* position: fixed; */
+    /* top: 20px; */
+    /* right: 20px; */
 }
 
 
 #modal-close {
     float: right;
+    font-size: 1em;
     background-color: rgb(125, 23, 23);
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 3px;
     border: none;
     z-index: 5;
-    margin-right: 20px;
+    margin-bottom: 20px;
+    /* margin-right: 20px; */
 }
 
+#modal img {
+    width: 100%;
+    max-width: 500px;
+
+}
 
 #modal-bilet-al {
-    float: right;
+    float: left;
     background-color: rgb(125, 23, 23);
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 3px;
     border: none;
     z-index: 5;
