@@ -311,3 +311,59 @@ display: none!important;
 #credits a, #credits a:hover, #credits {
  color:rgb(125, 13, 13);
 }
+
+#modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1;
+}
+
+.modal-inner {
+    position: fixed;
+    z-index: 2;
+    top: 10%;
+    left: 20px;
+    right: 20px;
+    bottom: 10%;
+}
+
+#modal-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+
+#modal-close {
+    float: right;
+    background-color: rgb(125, 23, 23);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    z-index: 5;
+    margin-right: 20px;
+}
+
+
+#modal-bilet-al {
+    float: right;
+    background-color: rgb(125, 23, 23);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    z-index: 5;
+    margin-right: 20px;
+
+
+}
+
+#modal-bilet-al a{
+    color: white;
+    text-decoration: none;
+}

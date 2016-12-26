@@ -42,4 +42,20 @@ responsive: false,
     autoWidth:true
   });
 
+
+
+
 });
+
+
+$(function () {
+    $('#modal-close').click(function () {
+	$('#modal').remove();
+    });
+});
+
+false && window.setTimeout(function () {
+
+    $('#modal').remove();
+
+}, 10000);
