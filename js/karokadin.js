@@ -54,7 +54,7 @@ $(function () {
     });
 });
 
-false && window.setTimeout(function () {
+window.setTimeout(function () {
 
     $('#modal').remove();
 
