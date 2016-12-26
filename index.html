@@ -2,7 +2,11 @@
 <html lang='tr'>
   <head>
 
-<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="initial-scale=1">
 <meta name="description" content="karo kadin: dans tiyatrosu: ilkay turkoglu ve sebnem yuksel">
@@ -246,7 +250,19 @@ var trackOutboundLink = function(url) {
       </div>
     </div>
 
-<hr/>
+    <hr/>
+    <div class="section" id="trailer" >
+      <div>
+        <h2>trailer</h2>
+<video id="my-video" class="video-js" controls width="640" height="400"  poster="images/MD_karo_kadin_temsil_murat_durum.jpg" data-setup="{}">
+  <source src="./karokadin_teaser2.mp4" type="video/mp4">
+  <!-- <source src="movie.ogg" type="video/ogg"> -->
+Your browser does not support the video tag.
+</video>
+    </div>
+    </div>
+    <hr/>
+
 <div class="section" id="gelecek-performanslar">
       <div>
         <h2>gelecek performanslar</h2>
@@ -289,6 +305,7 @@ var trackOutboundLink = function(url) {
 
     </div>
 
+  <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
