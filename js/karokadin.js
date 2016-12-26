@@ -58,4 +58,12 @@ window.setTimeout(function () {
 
     $('#modal').remove();
 
-}, 10000);
+}, 15000);
+
+
+// var t = 0;
+// window.setInterval(function () {
+
+//     $('#modal').remove();
+
+// }, 1000);
