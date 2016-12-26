@@ -56,7 +56,6 @@ var t = 0;
 var closeModal = function () {
     $('body').removeClass('modal-open');
     $('#modal').remove();
-
 };
 
 $(function () {
