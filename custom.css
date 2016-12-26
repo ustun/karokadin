@@ -377,3 +377,9 @@ display: none!important;
     color: white;
     text-decoration: none;
 }
+
+
+body.modal-open {
+    overflow: none;
+
+}

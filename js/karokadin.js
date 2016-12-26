@@ -53,17 +53,17 @@ var tMax = 15000;
 
 var t = 0;
 
+var closeModal = function () {
+    $('body').removeClass('modal-open');
+    $('#modal').remove();
+
+};
 
 $(function () {
-    $('#modal-close').click(function () {
-	$('#modal').remove();
-    });
 
-    window.setTimeout(function () {
+    $('#modal-close').click(closeModal);
 
-	$('#modal').remove();
-
-    }, tMax);
+    window.setTimeout(closeModal, tMax);
 
     var interval = window.setInterval(function () {
 
