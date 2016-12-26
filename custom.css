@@ -380,6 +380,6 @@ display: none!important;
 
 
 body.modal-open {
-    overflow: none;
+    overflow: hidden;
 
 }
